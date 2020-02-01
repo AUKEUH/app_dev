@@ -12,6 +12,7 @@ $('#submit').click(function (){
     $('.begin-view').animate({'margin-top': '-100vh'}, 500);
     $('.name').html(name);
     load_leader();
+    document.activeElement.blur();
 });
 
 function show_leader(){

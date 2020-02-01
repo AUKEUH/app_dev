@@ -1,7 +1,7 @@
 <?php
 require_once 'connect.php';
 
-$sql= "SELECT * FROM highscore ORDER BY CAST(score AS int)";
+$sql = "SELECT * FROM `highscore` ORDER BY `score`";
 $result = mysqli_query($conn, $sql);
 $resultCheck = mysqli_num_rows($result);
 $data = array();
